@@ -1,0 +1,12 @@
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\bin\Debug\Codigo QR.exe.config
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\bin\Debug\Codigo QR.exe
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\bin\Debug\Codigo QR.pdb
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\bin\Debug\zxing.dll
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo QR.csprojAssemblyReference.cache
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo_QR.Form1.resources
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo_QR.Properties.Resources.resources
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo QR.csproj.GenerateResource.cache
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo QR.csproj.CoreCompileInputs.cache
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo QR.csproj.CopyComplete
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo QR.exe
+C:\Users\Melvin\source\repos\Codigo QR\Codigo QR\obj\Debug\Codigo QR.pdb
