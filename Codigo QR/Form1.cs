@@ -63,7 +63,17 @@ namespace Codigo_QR
 
         private void btn_Abrir_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
+            OpenFileDialog Abrir = new OpenFileDialog();
+            if (Abrir.ShowDialog() == DialogResult.OK)
+            {
+                Abrir.Filter = "JPEG(*.JPG)|*.JPG|BMP(*.BMP)|*.BMP";
+                Image imagen = pbg_Generar.BackgroundImage;
+
+                pbg_codigo.Image = Image.FromFile(Abrir.FileName);
+                BarcodeReader br = new BarcodeReader();
+                string texto = br.Decode((Bitmap)pbg_codigo.Image).ToString();
+                txt_Texto.Text = texto;
+            }
         }
     }
 }
