@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txt_Nombre = new System.Windows.Forms.RichTextBox();
             this.pbg_Generar = new System.Windows.Forms.PictureBox();
             this.btn_Guardar = new System.Windows.Forms.Button();
@@ -37,11 +38,19 @@
             this.pbg_codigo = new System.Windows.Forms.PictureBox();
             this.btn_Abrir = new System.Windows.Forms.Button();
             this.txt_Texto = new System.Windows.Forms.RichTextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btn_Detener = new System.Windows.Forms.Button();
+            this.vsp_camara = new AForge.Controls.VideoSourcePlayer();
+            this.cmbx_CamSelec = new System.Windows.Forms.ComboBox();
+            this.btn_Iniciar = new System.Windows.Forms.Button();
+            this.txt_TextoCam = new System.Windows.Forms.RichTextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbg_Generar)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbg_codigo)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_Nombre
@@ -76,6 +85,7 @@
             this.tabControl1.AccessibleName = "probando";
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(0, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -95,7 +105,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Crear";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
@@ -135,7 +144,70 @@
             this.txt_Texto.Size = new System.Drawing.Size(242, 150);
             this.txt_Texto.TabIndex = 5;
             this.txt_Texto.Text = "";
-            this.txt_Texto.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.btn_Detener);
+            this.tabPage3.Controls.Add(this.vsp_camara);
+            this.tabPage3.Controls.Add(this.cmbx_CamSelec);
+            this.tabPage3.Controls.Add(this.btn_Iniciar);
+            this.tabPage3.Controls.Add(this.txt_TextoCam);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(375, 507);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Leer por Camara";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btn_Detener
+            // 
+            this.btn_Detener.Location = new System.Drawing.Point(275, 8);
+            this.btn_Detener.Name = "btn_Detener";
+            this.btn_Detener.Size = new System.Drawing.Size(75, 21);
+            this.btn_Detener.TabIndex = 4;
+            this.btn_Detener.Text = "Detener";
+            this.btn_Detener.UseVisualStyleBackColor = true;
+            this.btn_Detener.Click += new System.EventHandler(this.btn_Detener_Click);
+            // 
+            // vsp_camara
+            // 
+            this.vsp_camara.Location = new System.Drawing.Point(8, 35);
+            this.vsp_camara.Name = "vsp_camara";
+            this.vsp_camara.Size = new System.Drawing.Size(358, 223);
+            this.vsp_camara.TabIndex = 3;
+            this.vsp_camara.Text = "videoSourcePlayer1";
+            this.vsp_camara.VideoSource = null;
+            // 
+            // cmbx_CamSelec
+            // 
+            this.cmbx_CamSelec.FormattingEnabled = true;
+            this.cmbx_CamSelec.Location = new System.Drawing.Point(51, 8);
+            this.cmbx_CamSelec.Name = "cmbx_CamSelec";
+            this.cmbx_CamSelec.Size = new System.Drawing.Size(121, 21);
+            this.cmbx_CamSelec.TabIndex = 2;
+            // 
+            // btn_Iniciar
+            // 
+            this.btn_Iniciar.Location = new System.Drawing.Point(194, 8);
+            this.btn_Iniciar.Name = "btn_Iniciar";
+            this.btn_Iniciar.Size = new System.Drawing.Size(75, 21);
+            this.btn_Iniciar.TabIndex = 1;
+            this.btn_Iniciar.Text = "Iniciar";
+            this.btn_Iniciar.UseVisualStyleBackColor = true;
+            this.btn_Iniciar.Click += new System.EventHandler(this.btn_Iniciar_Click);
+            // 
+            // txt_TextoCam
+            // 
+            this.txt_TextoCam.Location = new System.Drawing.Point(8, 264);
+            this.txt_TextoCam.Name = "txt_TextoCam";
+            this.txt_TextoCam.Size = new System.Drawing.Size(358, 235);
+            this.txt_TextoCam.TabIndex = 0;
+            this.txt_TextoCam.Text = "";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -151,6 +223,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbg_codigo)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -165,6 +238,13 @@
         private System.Windows.Forms.PictureBox pbg_codigo;
         private System.Windows.Forms.Button btn_Abrir;
         private System.Windows.Forms.RichTextBox txt_Texto;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.RichTextBox txt_TextoCam;
+        private System.Windows.Forms.ComboBox cmbx_CamSelec;
+        private System.Windows.Forms.Button btn_Iniciar;
+        private AForge.Controls.VideoSourcePlayer vsp_camara;
+        private System.Windows.Forms.Button btn_Detener;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

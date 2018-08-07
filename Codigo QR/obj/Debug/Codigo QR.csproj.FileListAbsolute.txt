@@ -22,3 +22,16 @@ C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\obj\Debug\Codigo QR.csproj.Core
 C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\obj\Debug\Codigo QR.csproj.CopyComplete
 C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\obj\Debug\Codigo QR.exe
 C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\obj\Debug\Codigo QR.pdb
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Controls.dll
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Video.dll
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.dll
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Imaging.dll
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Math.dll
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Controls.xml
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Video.xml
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.xml
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Imaging.xml
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Math.xml
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\BarcodeLib.BarcodeReader.dll
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Melvin\source\repos\QR-CSharp\Codigo QR\bin\Debug\AForge.Video.DirectShow.xml
